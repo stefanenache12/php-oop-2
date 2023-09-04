@@ -1,6 +1,7 @@
 <?php
     require_once __DIR__.'/../utility/classespath.php';
-    require_once __DIR__.'/../database/db.php';
+    require_once __DIR__.'/../database/foodForDogs.php';
+    require_once __DIR__.'/../database/foodForCats.php';
 ?>
 
 <!DOCTYPE html>
@@ -13,22 +14,48 @@
         <title>OOP</title>
     </head>
     <body>
-        <?php
-            echo '<div class="container text-center">';
-            echo '<div class="row">';
-            foreach ($food as $product) {
-                echo '<div class="col-2">';
-                echo '<img src="' . $product->imgProduct . '" alt="' . $product->name . '"><br><br>';
-                echo $product->name . "<br>";
-                echo "$" . $product->price . "<br>";
-                echo $product->description . "<br>";
-                echo "Cibo per " . $product->categoryName . "<br>";
-                echo "Peso in Kg: " . $product->weight . "<br>";
-                echo "Cibo " . $product->type . "<br>";
-                echo '</div>'; 
-            }
-            echo '</div>'; 
-            echo '</div>'; 
-        ?>
+
+        <header class="p-5">
+            <h1>
+                AnimalsParadise..Food..Games...and more !
+            </h1>
+        </header>
+
+        <main>
+            <div class="container text-center">
+                <h2 class="text-start pt-5 pb-5">Cibo per Cani</h2>
+                <div class="row">
+                    <?php
+                        foreach ($foodForDogs as $product) {
+                            echo '<div class="col p-3">';
+                            echo '<img src="' . $product->imgProduct . '" alt="' . $product->name . '"><br><br>';
+                            echo "<h4>".$product->name."</h4>";
+                            echo "<h5>"."$" . $product->price."</h5>";
+                            echo "<p>".$product->description."<p>" ;
+                            echo "<h6>"."Cibo per " . $product->categoryName."</h6>";
+                            echo "<h6>"."Peso in Kg: " . $product->weight."</h6>";
+                            echo "<h6>"."Cibo " . $product->type."</h6>";
+                            echo '</div>'; 
+                        }
+                    ?>
+                </div>
+                <h2 class="text-start pt-5 pb-5">Cibo per Gatti</h2>
+                <div class="row">
+                    <?php
+                        foreach ($foodForCats as $product) {
+                            echo '<div class="col p-3">';
+                            echo '<img src="' . $product->imgProduct . '" alt="' . $product->name . '"><br><br>';
+                            echo "<h4>".$product->name."</h4>";
+                            echo "<h5>"."$" . $product->price."</h5>";
+                            echo "<p>".$product->description."<p>" ;
+                            echo "<h6>"."Cibo per " . $product->categoryName."</h6>";
+                            echo "<h6>"."Peso in Kg: " . $product->weight."</h6>";
+                            echo "<h6>"."Cibo " . $product->type."</h6>";
+                            echo '</div>'; 
+                        }
+                    ?>
+                </div>
+            </div> 
+        </main>
     </body>
 </html>
