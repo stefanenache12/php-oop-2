@@ -2,7 +2,7 @@
 
     require_once __DIR__.'/../utility/classespath.php';
 
-    class Accessories extends Category{
+    class Accessory extends Category{
         
         public $type;
 

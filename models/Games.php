@@ -2,7 +2,7 @@
 
     require_once __DIR__.'/../utility/classespath.php';
 
-    class Games extends Category{
+    class Game extends Category{
         
         public $type;
 
