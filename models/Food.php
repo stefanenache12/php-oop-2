@@ -2,13 +2,13 @@
 
     require_once __DIR__.'/../utility/classespath.php';
 
-    class Food extends Category{
+    class Food extends Product{
         public int $weight;
         public $type;
 
-        public function __construct($name,$price,$description,$imgProduct,$categoryName,$weight,$type)
+        public function __construct($name,$price,$description,$imgProduct,$category,$weight,$type)
         {
-            parent::__construct($name,$price,$description,$imgProduct,$categoryName);
+            parent::__construct($name,$price,$description,$imgProduct,$category);
             
             $this->weight = $weight;
             $this->type = $type;

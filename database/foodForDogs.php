@@ -9,7 +9,7 @@
         49.99,
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae veritatis nihil nisi blanditiis corporis modi deserunt, nemo odit deleniti ut?',
         'https://arcaplanet.vtexassets.com/arquivos/ids/270797/Monge-All-Breeds-Adult-Salmone-e-Riso-12Kg.jpg?v=1780236261',
-        'Cani',
+        $dogCategory,
         12,
         'Secco'
     );
@@ -21,7 +21,7 @@
         4.30,
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae veritatis nihil nisi blanditiis corporis modi',
         'https://arcaplanet.vtexassets.com/arquivos/ids/257857/stuzzy-monoprotein-agnello-.jpg?v=1780239079',
-        'Cani',
+        $dogCategory,
         1,
         'Umido'
     );
@@ -33,7 +33,7 @@
         24.5,
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae veritatis nihil nisi blanditiis corporis modi',
         'https://arcaplanet.vtexassets.com/arquivos/ids/268978/acana-pacifica-recipe.jpg?v=1780237352',
-        'Cani',
+        $dogCategory,
         12,
         'Secco'
     );

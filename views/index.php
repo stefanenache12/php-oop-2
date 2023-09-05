@@ -34,7 +34,7 @@
                             echo "<h4>".$product->name."</h4>";
                             echo "<h5>"."$" . $product->price."</h5>";
                             echo "<p>".$product->description."<p>" ;
-                            echo "<h6>"."Cibo per: " . $product->categoryName.' <i class="fa-solid fa-dog"></i>'."</h6>";
+                            echo "<h6>"."Cibo per: " . $product->category->categoryName. " " .$product->category->icon."</h6>";
                             echo "<h6>"."Peso in Kg: " . $product->weight."</h6>";
                             echo "<h6>"."Cibo " . $product->type."</h6>";
                             echo '</div>'; 
@@ -50,7 +50,7 @@
                             echo "<h4>".$product->name."</h4>";
                             echo "<h5>"."$" . $product->price."</h5>";
                             echo "<p>".$product->description."<p>" ;
-                            echo "<h6>"."Cibo per: " . $product->categoryName.' <i class="fa-solid fa-cat"></i>'."</h6>";
+                            echo "<h6>"."Cibo per: " . $product->category->categoryName. " " .$product->category->icon."</h6>";
                             echo "<h6>"."Peso in Kg: " . $product->weight."</h6>";
                             echo "<h6>"."Cibo " . $product->type."</h6>";
                             echo '</div>'; 
@@ -66,7 +66,7 @@
                             echo "<h4>".$product->name."</h4>";
                             echo "<h5>"."$" . $product->price."</h5>";
                             echo "<p>".$product->description."<p>" ;
-                            echo "<h6>"."Gioco per: " . $product->categoryName."</h6>";
+                            echo "<h6>"."Gioco per: " . $product->category->categoryName. " " .$product->category->icon."</h6>";
                             echo "<h6>"."Tipo di Gioco o Accesorio: " . $product->type."</h6>";
                             echo '</div>'; 
                         }

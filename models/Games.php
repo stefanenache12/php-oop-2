@@ -2,13 +2,13 @@
 
     require_once __DIR__.'/../utility/classespath.php';
 
-    class Game extends Category{
+    class Game extends Product{
         
         public $type;
 
-        public function __construct($name,$price,$description,$imgProduct,$categoryName,$type)
+        public function __construct($name,$price,$description,$imgProduct,$category,$type)
         {
-            parent::__construct($name,$price,$description,$imgProduct,$categoryName);
+            parent::__construct($name,$price,$description,$imgProduct,$category);
             
             $this->type = $type;
         }

@@ -6,8 +6,7 @@
         public $cvvNumber;
         public $expirationDate;
 
-        public function __construct
-        (
+        public function __construct(
             $username,
             $email,
             $firstName,
