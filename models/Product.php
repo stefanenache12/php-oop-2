@@ -15,5 +15,13 @@
             $this->description = $description;
             $this->imgProduct = $imgProduct;
             $this->category = $category;
+
+            if(!is_numeric($price) || $price < 0){
+                throw new Exception('Il prezzo non è valido');
+                $this->price = "Prezzo non disponibile!";
+            }else {
+                $this->price = $price;
+            }
         }
+
     }

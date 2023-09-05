@@ -29,7 +29,7 @@
                 <div class="row">
                     <?php
                         foreach ($foodForDogs as $product) {
-                            echo '<div class="col p-3">';
+                            echo '<div class="col p-2 m-2">';
                             echo '<img src="' . $product->imgProduct . '" alt="' . $product->name . '"><br><br>';
                             echo "<h4>".$product->name."</h4>";
                             echo "<h5>"."$" . $product->price."</h5>";
@@ -45,7 +45,7 @@
                 <div class="row">
                     <?php
                         foreach ($foodForCats as $product) {
-                            echo '<div class="col p-3">';
+                            echo '<div class="col p-2 m-2">';
                             echo '<img src="' . $product->imgProduct . '" alt="' . $product->name . '"><br><br>';
                             echo "<h4>".$product->name."</h4>";
                             echo "<h5>"."$" . $product->price."</h5>";
@@ -61,7 +61,7 @@
                 <div class="row">
                     <?php
                         foreach ($accesoriesAndGames as $product) {
-                            echo '<div class="col p-3">';
+                            echo '<div class="col p-2 m-2">';
                             echo '<img src="' . $product->imgProduct . '" alt="' . $product->name . '"><br><br>';
                             echo "<h4>".$product->name."</h4>";
                             echo "<h5>"."$" . $product->price."</h5>";

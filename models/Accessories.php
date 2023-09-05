@@ -4,7 +4,7 @@
 
     class Accessory extends Product{
         
-        public $type;
+        use Type;
 
         public function __construct($name,$price,$description,$imgProduct,$category,$type)
         {

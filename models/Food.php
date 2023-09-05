@@ -4,7 +4,7 @@
 
     class Food extends Product{
         public int $weight;
-        public $type;
+        use Type;
 
         public function __construct($name,$price,$description,$imgProduct,$category,$weight,$type)
         {
